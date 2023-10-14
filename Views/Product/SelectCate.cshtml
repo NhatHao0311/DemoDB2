@@ -1,0 +1,11 @@
+﻿@model DemoDB2.sln.Models.Category
+    @Html.DropDownListFor(model=>model.IDCate,
+    new SelectList(Model.ListCate.OrderBy(model=>model.NameCate), "IDCate", "NameCate"), "--Select Cate--")
+
+@{
+    ViewBag.Title = "SelectCate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@{ Html.RenderAction("action_name", "controller_name");}*@
+
